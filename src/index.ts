@@ -7,6 +7,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
-app.listen(8080, () => {
-    console.log('API Rodando na Porta 8080');
+const port = process.env.PORT || 3333;
+
+app.listen(port, () => {
+    console.log('API Rodando na Porta 3333');
 });
