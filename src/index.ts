@@ -7,6 +7,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
+app.get('/', (req: Request, res: Response) => {
+    return res.send('http:localhost:3333');
+});
+
 const port = process.env.PORT || 3333;
 
 app.listen(port, () => {
