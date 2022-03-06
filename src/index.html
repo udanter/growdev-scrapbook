@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Avaliação Final Uiliam</title>
+    <!--links CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css.map" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+</head>
+  </head>
+
+  <!-- O padding define a 1ª DIV com margem 0 cobrindo toda a tela com o container -->
+  <body class="padd-0 row container-fluid">
+
+    <!-- a DIV NAV ocupa 1/4 da tela alinhada a esquerda da tela com margem 0 e o uso do flexbox para dar responsividade -->
+    <nav
+      class="
+        padd-0
+        col-3
+        d-flex
+        flex-column
+        align-items-center
+        justify-content-center
+      "
+    >
+      <!--classe de margem e preenchimento responsiva do bootstrap -->
+      <div class="mb-4">
+        <!--link da imagem dentro da NAV -->
+        <img src="./imagem/avatar.jpg" alt="Minha foto" />
+      </div>
+
+      <div class="
+        d-flex 
+        flex-column 
+        align-items-md-center">
+
+        <!--Botão Sobre -->
+        <a href="#" onclick="clicarSobre()" id="ativarSobre" class="d-block btn1">
+            SOBRE
+        </a>
+
+        <!--Botão Conhecimento -->
+        <a href="#" onclick="clicarConhecimento()" id="ativarConhecimento" class="d-block btn1">
+            CONHECIMENTOS
+        </a>
+
+        <!--Botão Objetivo -->
+        <a href="#" onclick="clicarObjetivo()" id="ativarObjetivo" class="d-block btn1">
+            OBJETIVO
+        </a>
+    </nav>
+
+    <!--Conteúdo do MAIN, principal conteúdo dentro do body, dados do curriculum -->
+    <main class="padd-0 col-9 flex-column">
+        <div class="ms-5 padd-0 col-9 d-flex flex-wrap"> 
+            <h1 id="nome" class="col-12"></h1>
+            <h4 id="endereco" class="dadosPessoais ms-1"></h4>
+            <h4 id="email" class="c-black-opac dadosPessoais ms-1"></h4>
+            <h4 id="numero" class="dadosPessoais ms-1"></h4>
+        </div> 
+        <div class="ms-5">
+            <div class="m-top">             
+                <p id="descricao" class="col-9"></p>
+                <h3 id="know" class="col-12"></h3>
+                <p id="objetivo" class="col-9"></p>
+            </div>    
+            <div id="icones">
+                <ul class="list-group list-group-horizontal">
+                    <li>
+                    <a id="facebook" href="#" target="_blank" ></a>
+                    </li>
+                    <li>
+                        <a id="twitter" href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a id="linkedin" href="#" target="_blank"></a>
+                    </li>
+                    <li>
+                        <a id="github" href="#" target="_blank"></a>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+            <footer id="footer" class="pe-3 position-absolute bottom-0 end-0"></footer>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
